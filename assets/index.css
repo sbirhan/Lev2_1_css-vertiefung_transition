@@ -1,0 +1,55 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(204, 240, 204);
+}
+
+.frame{
+    position: relative;
+    width: 38vw;
+    height: 75vh;
+    margin-left: 28vw;
+    margin-top: 10vh;
+    border: 20px double rgb(6, 70, 6);
+}
+
+.image-box{
+    display: block;
+    width: auto;
+    height: 70vh;
+    margin-left: .5vw;
+    margin-top: 2vh;
+    background-image: url(https://www.konfest.com/wp-content/uploads/2019/07/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-Autumn-Leaves-Frame-Background-Season-Mid-autumn-Festival-Thanksgiving-Halloween-Fall-Love-Fruit-Leaf-19.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+}
+
+.curtain{
+    position: absolute;
+    width: 38vw;
+    height: 75vh;
+    left: 0vw;
+    top: 69.5vh;
+    transition: top ease 2s;
+    visibility: hidden;
+}
+
+p{
+    position: absolute;
+    font-size: 5vw;
+    color: white;
+    margin-left: 9vw;
+    margin-top: 35vh;
+}
+
+.frame:hover .curtain{
+    top: 0vh;
+    visibility: visible;
+    background-color: green;
+    opacity: 50%;
+}
